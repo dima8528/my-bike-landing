@@ -1,0 +1,77 @@
+.phone {
+  &__wrapper {
+    display: flex;
+    position: relative;
+    width: $on-tablet-icon-size;
+    height: 32px;
+
+    @include on-desktop {
+      width: 182px;
+    }
+  }
+
+  &-number {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 2px;
+    opacity: 0;
+    pointer-events: none;
+    padding: 8px 0;
+    transform: translateY(-50%);
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    @include on-desktop {
+      display: block;
+    }
+  }
+}
+
+.icon {
+  display: block;
+  width: $icon-size;
+  height: $icon-size;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &--phone {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('../icons/header/icon-phone.svg');
+
+    &:hover + .phone-number {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  &--menu {
+    background-image: url('../icons/header/icon-burger-menu.svg');
+
+    &:hover {
+      background-image: url('../icons/header/icon-burger-menu-hover.svg');
+    }
+  }
+
+  &--close {
+    background-image: url('../icons/menu/icon-close.svg');
+  }
+
+  @include on-tablet {
+    width: $on-tablet-icon-size;
+    height: $on-tablet-icon-size;
+  }
+}

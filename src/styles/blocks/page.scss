@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: Poppins, sans-serif;
+  color: $text-color;
+  scroll-behavior: smooth;
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    background-color: $bg-color;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.main__wrapper {
+  position: relative;
+  min-width: 280px;
+  max-width: 1260px;
+  padding: 0 20px 120px;
+  margin: 0 auto;
+  z-index: 1;
+
+  @include on-tablet {
+    padding: 0 72px 120px;
+  }
+
+  @include on-desktop {
+    padding: 0 120px 182px;
+  }
+}

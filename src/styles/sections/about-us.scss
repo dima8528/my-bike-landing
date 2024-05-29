@@ -1,0 +1,43 @@
+.about-us {
+  padding: 60px 0 0;
+
+  &__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -1.5px;
+    margin-bottom: 32px;
+
+    @include on-tablet {
+      font-size: 48px;
+      line-height: 48px;
+      margin-right: 80px;
+    }
+
+    @include on-desktop {
+      font-size: 64px;
+      line-height: 64px;
+      margin-right: 160px;
+    }
+  }
+
+  &__text {
+    width: 280px;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 32px;
+
+    @include on-tablet {
+      width: 288px;
+    }
+
+    @include on-desktop {
+      width: 498px;
+    }
+  }
+
+  @include on-tablet {
+    display: flex;
+    padding-top: 120px;
+  }
+}

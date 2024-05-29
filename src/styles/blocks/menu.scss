@@ -1,0 +1,92 @@
+.menu {
+  position: fixed;
+  background-color: $menu-bg-color;
+  text-transform: uppercase;
+  font-weight: 600;
+  overflow: auto;
+
+  &:target {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &__wrapper {
+    width: 100%;
+
+    @include on-desktop {
+      width: 1020px;
+      margin: 0 auto;
+      transform: translateX(-8.5px);
+    }
+  }
+
+  &__top {
+    position: sticky;
+    background-color: $menu-bg-color;
+    top: 0;
+    z-index: 1;
+    padding-bottom: 48px;
+
+    @include on-tablet {
+      padding-bottom: 44px;
+    }
+
+    @include on-desktop {
+      padding-bottom: 60px;
+    }
+  }
+
+  &__list {
+    margin: 0 0 40px;
+    padding: 0;
+  }
+
+  &__contacts {
+    padding-bottom: 40px;
+  }
+
+  &__phone-number {
+    color: $menu-text-color;
+    font-size: 16px;
+    line-height: 27px;
+    text-decoration: none;
+  }
+
+  &__book-a-test-ride {
+    display: block;
+    width: fit-content;
+    color: $bg-color;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin-top: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $menu-text-color;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__item {
+    list-style-type: none;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid $menu-text-color;
+      width: fit-content;
+    }
+  }
+
+  &__link {
+    color: $menu-text-color;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}

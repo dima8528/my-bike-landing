@@ -1,4 +1,12 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+# My Bike Landing Page
+
+This is a landing page that presents information about the products of the MyBike company.
+
+To implement this landing, the following technologies were used:
+- **HTML5**
+- **SCSS Preprocessor**
+
+## Links
+- [MockUp on Figma](https://www.figma.com/design/NZQAIydtHo5QkINyGLHNcq/BIKE-New-Version?node-id=0-1&t=djH2DAluYjVEOk5r-0)
+- [Live Demo](https://dima8528.github.io/layout_landing-page/)
+

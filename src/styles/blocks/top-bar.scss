@@ -1,0 +1,55 @@
+.top-bar {
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 100vh;
+
+  @include on-tablet {
+    padding: 0 72px;
+  }
+
+  @include on-desktop {
+    padding: 0 120px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-top: 24px;
+
+    @include on-tablet {
+      padding-top: 36px;
+      margin-bottom: 36px;
+    }
+
+    @include on-desktop {
+      width: 1020px;
+      margin: 0 auto;
+    }
+  }
+
+  &__logo-link {
+    display: flex;
+    margin: 0;
+  }
+
+  &__logo {
+    width: 130px;
+
+    @include on-tablet {
+      width: 187px;
+    }
+
+    @include on-desktop {
+      width: 187px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 24px;
+  }
+}

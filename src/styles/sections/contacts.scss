@@ -1,0 +1,125 @@
+.contacts {
+  &__title {
+    @include on-tablet {
+      margin: 120px 0 48px;
+    }
+
+    @include on-desktop {
+      font-size: 48px;
+      line-height: 48px;
+      margin: 180px 0 48px;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(1, $contacts-width);
+    justify-content: center;
+    gap: 48px;
+
+    @include on-tablet {
+      grid-template-columns: repeat(2, $on-tablet-contacts-width);
+      gap: 24px;
+    }
+
+    @include on-desktop {
+      grid-template-columns: repeat(2, $on-desktop-contacts-width);
+      gap: 198px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: $input-field-color;
+    border: 1px solid $input-field-color;
+    border-radius: 40px;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+
+    &:hover::placeholder {
+      color: $input-text-color;
+    }
+
+    &:focus::placeholder {
+      color: $input-text-color;
+    }
+
+    @include on-tablet {
+      width: $on-tablet-contacts-width;
+    }
+
+    @include on-desktop {
+      width: $on-desktop-contacts-width;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 148px;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid $input-field-color;
+    border-radius: 16px;
+    padding: 14px 16px;
+    margin-bottom: 32px;
+    resize: none;
+
+    &:hover::placeholder {
+      color: $input-text-color;
+    }
+
+    &:focus::placeholder {
+      color: $input-text-color;
+    }
+
+    @include on-tablet {
+      width: $on-tablet-contacts-width;
+    }
+
+    @include on-desktop {
+      width: $on-desktop-contacts-width;
+    }
+  }
+
+  &__form {
+    width: $contacts-width;
+  }
+
+  &__contact-data {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  &__item {
+    &-title {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+
+    &-text {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      transition: color 0.1s ease;
+
+      &:hover {
+        color: #dffe47;
+      }
+    }
+  }
+
+  &__button {
+    @include on-tablet {
+      width: $on-tablet-contacts-width;
+    }
+
+    @include on-desktop {
+      width: $on-desktop-contacts-width;
+    }
+  }
+}

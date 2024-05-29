@@ -1,3 +1,14 @@
-body {
-  margin: 0;
-}
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/reset';
+@import 'blocks/page';
+@import 'blocks/top-bar';
+@import 'sections/header';
+@import 'blocks/menu';
+@import 'blocks/icons';
+@import 'sections/section';
+@import 'sections/about-us';
+@import 'sections/compare-bikes';
+@import 'sections/details';
+@import 'sections/contacts';
+@import 'sections/footer';
