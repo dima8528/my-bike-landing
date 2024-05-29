@@ -8,5 +8,5 @@ To implement this landing, the following technologies were used:
 
 ## Links
 - [MockUp on Figma](https://www.figma.com/design/NZQAIydtHo5QkINyGLHNcq/BIKE-New-Version?node-id=0-1&t=djH2DAluYjVEOk5r-0)
-- [Live Demo](https://dima8528.github.io/layout_landing-page/)
+- [Live Demo](https://dima8528.github.io/my-bike-landing/)
 
